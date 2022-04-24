@@ -18,6 +18,8 @@ const AddUser = () => {
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                alert('user data send');
+                event.target.reset()
             })
             .catch((error) => {
                 console.error('Error:', error);
